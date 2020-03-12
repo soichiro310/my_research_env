@@ -11,7 +11,7 @@ echo "c.NotebookApp.password = u${SHA_TMP}" >> ~/.jupyter/jupyter_notebook_confi
 
 unset SHA_TMP
 
-echo "c.NotebookApp.ip = '133.15.24.14'" >> ~/.jupyter/jupyter_notebook_config.py
+echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.port = 8888" >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.notebook_dir = '/'" >> ~/.jupyter/jupyter_notebook_config.py
