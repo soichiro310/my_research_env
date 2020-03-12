@@ -7,6 +7,7 @@ set-option -g base-index 1
 # ウィンドウ履歴の最大行数
 set-option -g history-limit 5000
 
+# マウス操作関連
 set -g mouse on
 bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
 bind -n WheelDownPane select-pane -t= \; send-keys -M
@@ -30,8 +31,6 @@ bind \ split-window -h
 ## ペインの移動をprefixなしで行う（Shift + 矢印キー）
 bind -n S-left select-pane -t :.-
 bind -n S-right select-pane -t :.+
-
-
 
 # 設定ファイルをリロードする
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
